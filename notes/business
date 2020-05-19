@@ -1,0 +1,29 @@
+how can i make this app a business
+
+lots of guys already doing this
+https://www.google.com/search?q=screenshot+automatically+upload&oq=screenshot+automatica&aqs=chrome.3.0j69i57j0l4j69i60j69i61.7452j0j7&sourceid=chrome&ie=UTF-8
+
+
+------
+put it as apt package
+run as service in the background
+free online storage
+only live for sometime?
+
+automatc start on system startup (startup script or service or any other way.)
+read credentials from aws local credential storage
+
+configurations:
+aws keys - even abstract the storage part
+keyword regex for 'screenshot'
+Folders
+ipfs
+
+
+
+features :
+snipping
+editing/drawing/scribbling on screen
+
+dev features :
+have debug and prod logs

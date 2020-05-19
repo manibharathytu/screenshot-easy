@@ -1,0 +1,5 @@
+fb4741c663eba06431af96f928e7d4d75b8107a17fba135ad43824d7972eeb44 
+screenshots-auto [19/May/2020:04:39:18 +0000]
+ 106.198.39.56
+  fb4741c663eba06431af96f928e7d4d75b8107a17fba135ad43824d7972eeb44
+   9D75C85783C5E44C REST.GET.BUCKETPOLICY - "GET /screenshots-auto?policy= HTTP/1.1" 404 NoSuchBucketPolicy 309 - 21 - "-" "S3Console/0.4, aws-internal/3 aws-sdk-java/1.11.761 Linux/4.9.217-0.1.ac.205.84.332.metal1.x86_64 OpenJDK_64-Bit_Server_VM/25.242-b08 java/1.8.0_242 vendor/Oracle_Corporation" - uyUbltYb4/ae5w7XtQa0t3LTinUspl5z56ljiY/hQldGsEmSdP0HLxp6Rcs4E151wcIt6/uwWEs= SigV4 ECDHE-RSA-AES128-SHA AuthHeader s3-us-west-2.amazonaws.com TLSv1.2
