@@ -1,0 +1,22 @@
+{
+  "name": "screenshot-easy",
+  "version": "1.0.0",
+  "description": "once screenshot taken its automatically uploaded to s3 bucket and access url is copied to clipboard. So users can just press Print screen and press ctrl+V in a chat with friend.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manibharathytu/screenshot-easy.git"
+  },
+  "keywords": [
+    "screenshot"
+  ],
+  "author": "mani.b",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/manibharathytu/screenshot-easy/issues"
+  },
+  "homepage": "https://github.com/manibharathytu/screenshot-easy#readme"
+}
