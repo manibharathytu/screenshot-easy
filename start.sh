@@ -16,7 +16,7 @@ cd $THIS_DIR
 log "$THIS_DIR/start.log . Check this file for further logs"
 
 {
-    log "Going to execute node app"
+    log "Running node app..."
     node main.js
     log "start.sh execution ends. This means node app has exited for some resaon. Refer app.log for more info."
 } >>start.log
