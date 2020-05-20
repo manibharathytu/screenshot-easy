@@ -1,0 +1,13 @@
+write read me on how to setup
+
+make the setup very easy
+
+make it all platform friendly
+
+reduce dependancy (right now only node and npm packages are the dependancy)
+
+cover as much as use cases with schreenshot sharing
+
+public server for temp screenshot sharing.
+
+highly configurable.

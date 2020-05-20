@@ -1,0 +1,17 @@
+no proper way to terminate the application
+
+only one instance should run. for eg: in the case of restarting crontab, or manually running sometimes the number of instances can be growing
+need a properway to monitor it. LOGS or any other way like a cmd.
+----
+
+abstract username from the aws cred file path
+
+-----
+
+single instance
+
+-----
+too much :
+automatic restarts on crashes
+error reporting and alerts. 
+remote logs.

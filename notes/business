@@ -17,6 +17,7 @@ configurations:
 aws keys - even abstract the storage part
 keyword regex for 'screenshot'
 Folders
+bucket_name
 ipfs
 
 
@@ -26,4 +27,6 @@ snipping
 editing/drawing/scribbling on screen
 
 dev features :
-have debug and prod logs
+have debug and prod logs - loglevel
+
+
