@@ -1,9 +1,7 @@
-ends not coming - thats cos the shell scrpt is terminated not the node process
-application already running not coming - also time not coming
 
 the single-instance-app.sock error why? - its gon with sudo why?
 
-printscreen crashed the app.
+printscreen crashed the app once. why
 
 ----------
 
@@ -11,3 +9,11 @@ closing - for now system monitor killing is the only way
 
 --------
 app log make it IST and readable
+
+----
+
+the sock err is not printed in the logs. i think because its stderr and i dint incude it in the log
+
+-----------
+
+service keeps on restarting when already an instance is runnnig

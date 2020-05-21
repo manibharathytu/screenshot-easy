@@ -1,0 +1,18 @@
+tried profile, service, cron
+
+cron didnt work at all
+profile made this black screen of death. it workd on system start but as soon as you press print sccreen it crashes
+service also the same - when print screen pressed its dying.
+
+it was the xsel command used by clipboardy
+
+may be because of the account with which service runs? insufficient permission? spawning another process not allowed
+
+
+to check logs.
+journalctl -u screenshot -b
+
+
+-----------
+the reason is xsel and xclip commands can't work in headless systems. even though i have UI the service ans startup scripts run headless
+https://askubuntu.com/questions/305654/xclip-on-headless-server

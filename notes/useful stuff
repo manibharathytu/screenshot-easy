@@ -11,3 +11,7 @@ package creating :
 https://askubuntu.com/questions/336130/create-apt-get-install-for-own-software
 
 https://ubuntuforums.org/showthread.php?t=910717
+
+run as servie at startup (restart on failure):
+https://medium.com/@benmorel/creating-a-linux-service-with-systemd-611b5c8b91d6
+https://gist.github.com/willrstern/3510ecef59c3f76b0152

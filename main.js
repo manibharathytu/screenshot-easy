@@ -8,20 +8,38 @@ var Aws = awsCli.Aws;
 
 const log_folder = "logs"
 /////////////////////////////////////////////////// Single instance check
-var SingleInstance = require('single-instance');
+var net = require('net');
 
-var locker = new SingleInstance('my-app-name');
-locker.lock()
-.then(function() {
-  // We just locked our application,
-  // now we can do what we want !
-//   app()
-})
-.catch(function(err) {
-  console.log(err);
-  // Quit the application
-  process.exit()
-})
+var isPortInUse = function(port, callback) {
+    var server = net.createServer(function(socket) {
+	socket.write('Echo server\r\n');
+	socket.pipe(socket);
+    });
+
+    server.listen(port, '127.0.0.1');
+    server.on('error', function (e) {
+	callback(true);
+    });
+    server.on('listening', function (e) {
+	// server.close();
+	callback(false);
+    });
+};
+
+
+isPortInUse(5858, function(portInUse) {
+    if (portInUse) {
+    console.log("An instance already running");
+    process.exit()
+    }
+    else{
+    console.log("App is running...");
+  }
+
+    // else{
+    //   reservePort()
+    // }
+});
 //////////////////////////////////////////////////// Single instance check
 if (!fs.existsSync(log_folder)){
    fs.mkdirSync(log_folder);
@@ -65,6 +83,7 @@ const onChangeDetection = function (evt, name) {
   if (evt == 'update' && !name.startsWith('Screenshot')) {
     logger(name+' '+ evt);
     if(oneSecondRuleCheck()) return;
+    // console.log('after one second rule check')
     const fileName = name.split('/').pop()
     const upload_cmd = "s3 cp \"" + name + "\" s3://screenshots-auto --grants read=uri=http://acs.amazonaws.com/groups/global/AllUsers"
     clipboardy.writeSync('https://screenshots-auto.s3.us-west-2.amazonaws.com/' + fileName); // copy to clipboard

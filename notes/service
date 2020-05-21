@@ -1,0 +1,11 @@
+place the screenshot.service in /etc/systemd/system
+
+then use
+
+systemctl start screenshot
+
+
+-------
+prereq :
+the exec file should be an executable not just shell script
+and also at the top of the shell script "#!/bin/bash"

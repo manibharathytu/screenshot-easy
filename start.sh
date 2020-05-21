@@ -1,3 +1,4 @@
+#!/bin/bash
 ####### Helpers
 timestamp() {
     date "+%Y-%m-%d %H:%M:%S"
@@ -8,15 +9,15 @@ log() {
 }
 
 ####### My main logic starts
-log "start.sh starts..."
 
 THIS_DIR=$(dirname "$0")
 cd $THIS_DIR
 
-log "$THIS_DIR/start.log . Check this file for further logs"
+log "Refer startup log - $THIS_DIR/start.log for any startup issues."
 
 {
-    log "Running node app..."
-    node main.js
-    log "start.sh execution ends. This means node app has exited for some resaon. Refer app.log for more info."
-} >>start.log
+    log "Starting..."
+    node main.js   #if not spawned the startup script will be stuck.  
+    log "Exiting..."
+    exit 0
+} &>>start.log

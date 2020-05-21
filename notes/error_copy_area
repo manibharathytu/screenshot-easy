@@ -1,0 +1,69 @@
+                /home/mani/Desktop/mani/tools/screenshot-easy/node_modules/clipboardy/lib/linux.js:43
+                            throw makeError(xselError, fallbackError);
+                            ^
+
+                Error: Both xsel and fallback failed
+                    at makeError (/home/mani/Desktop/mani/tools/screenshot-easy/node_modules/clipboardy/lib/linux.js:16:11)
+                    at xselWithFallbackSync (/home/mani/Desktop/mani/tools/screenshot-easy/node_modules/clipboardy/lib/linux.js:43:10)
+                    at Object.copySync (/home/mani/Desktop/mani/tools/screenshot-easy/node_modules/clipboardy/lib/linux.js:53:3)
+                    at Object.exports.writeSync (/home/mani/Desktop/mani/tools/screenshot-easy/node_modules/clipboardy/index.js:45:14)
+                    at Watcher.onChangeDetection (/home/mani/Desktop/mani/tools/screenshot-easy/main.js:85:16)
+                    at Watcher.emit (events.js:310:20)
+                    at /home/mani/Desktop/mani/tools/screenshot-easy/node_modules/node-watch/lib/watch.js:305:19
+                    at /home/mani/Desktop/mani/tools/screenshot-easy/node_modules/node-watch/lib/watch.js:39:7
+                    at /home/mani/Desktop/mani/tools/screenshot-easy/node_modules/node-watch/lib/watch.js:303:7
+                    at /home/mani/Desktop/mani/tools/screenshot-easy/node_modules/node-watch/lib/watch.js:109:10 {
+                xselError: Error: Command failed: xsel --clipboard --input
+                xsel: Can't open display: (null)
+                : Inappropriate ioctl for device
+                
+                
+                    at makeError (/home/mani/Desktop/mani/tools/screenshot-easy/node_modules/execa/index.js:174:9)
+                    at Function.module.exports.sync (/home/mani/Desktop/mani/tools/screenshot-easy/node_modules/execa/index.js:338:15)
+                    at xselWithFallbackSync (/home/mani/Desktop/mani/tools/screenshot-easy/node_modules/clipboardy/lib/linux.js:38:16)
+                    at Object.copySync (/home/mani/Desktop/mani/tools/screenshot-easy/node_modules/clipboardy/lib/linux.js:53:3)
+                    at Object.exports.writeSync (/home/mani/Desktop/mani/tools/screenshot-easy/node_modules/clipboardy/index.js:45:14)
+                    at Watcher.onChangeDetection (/home/mani/Desktop/mani/tools/screenshot-easy/main.js:85:16)
+                    at Watcher.emit (events.js:310:20)
+                    at /home/mani/Desktop/mani/tools/screenshot-easy/node_modules/node-watch/lib/watch.js:305:19
+                    at /home/mani/Desktop/mani/tools/screenshot-easy/node_modules/node-watch/lib/watch.js:39:7
+                    at /home/mani/Desktop/mani/tools/screenshot-easy/node_modules/node-watch/lib/watch.js:303:7 {
+                    code: 1,
+                    stdout: '',
+                    stderr: "xsel: Can't open display: (null)\n: Inappropriate ioctl for device\n",
+                    failed: true,
+                    signal: null,
+                    cmd: 'xsel --clipboard --input',
+                    timedOut: false
+                },
+                fallbackError: Error: Command failed: /home/mani/Desktop/mani/tools/screenshot-easy/node_modules/clipboardy/fallbacks/linux/xsel --clipboard --input
+                /home/mani/Desktop/mani/tools/screenshot-easy/node_modules/clipboardy/fallbacks/linux/xsel: Can't open display: (null)
+                : Inappropriate ioctl for device
+                
+                
+                    at makeError (/home/mani/Desktop/mani/tools/screenshot-easy/node_modules/execa/index.js:174:9)
+                    at Function.module.exports.sync (/home/mani/Desktop/mani/tools/screenshot-easy/node_modules/execa/index.js:338:15)
+                    at xselWithFallbackSync (/home/mani/Desktop/mani/tools/screenshot-easy/node_modules/clipboardy/lib/linux.js:41:17)
+                    at Object.copySync (/home/mani/Desktop/mani/tools/screenshot-easy/node_modules/clipboardy/lib/linux.js:53:3)
+                    at Object.exports.writeSync (/home/mani/Desktop/mani/tools/screenshot-easy/node_modules/clipboardy/index.js:45:14)
+                    at Watcher.onChangeDetection (/home/mani/Desktop/mani/tools/screenshot-easy/main.js:85:16)
+                    at Watcher.emit (events.js:310:20)
+                    at /home/mani/Desktop/mani/tools/screenshot-easy/node_modules/node-watch/lib/watch.js:305:19
+                    at /home/mani/Desktop/mani/tools/screenshot-easy/node_modules/node-watch/lib/watch.js:39:7
+                    at /home/mani/Desktop/mani/tools/screenshot-easy/node_modules/node-watch/lib/watch.js:303:7 {
+                    code: 1,
+                    stdout: '',
+                    stderr: "/home/mani/Desktop/mani/tools/screenshot-easy/node_modules/clipboardy/fallbacks/linux/xsel: Can't open display: (null)\n" +
+                    ': Inappropriate ioctl for device\n',
+                    failed: true,
+                    signal: null,
+                    cmd: '/home/mani/Desktop/mani/tools/screenshot-easy/node_modules/clipboardy/fallbacks/linux/xsel --clipboard --input',
+                    timedOut: false
+                }
+                }
+
+                ------------
+                ------------
+                notes :
+
+                why there a '+' in the error message
