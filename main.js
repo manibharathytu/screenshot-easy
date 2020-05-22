@@ -2,6 +2,7 @@ const clipboardy = require('clipboardy');
 var watch = require('node-watch');
 var awsCli = require('aws-cli-js');
 const fs = require('fs')
+const notifier = require('node-notifier');
 
 var Options = awsCli.Options;
 var Aws = awsCli.Aws;
@@ -82,8 +83,12 @@ const upload = function(filePath){
   const upload_cmd = "s3 cp \"" + filePath + "\" s3://screenshots-auto --grants read=uri=http://acs.amazonaws.com/groups/global/AllUsers"
   clipboardy.writeSync('https://screenshots-auto.s3.us-west-2.amazonaws.com/' + fileName); // copy to clipboard
   logger("copied to clipboard")
+  notifier.notify('copied to clipboard');
+
   aws.command(upload_cmd).then(function (data) {
     logger('data = ' + data);
+  notifier.notify('upload done');
+
   });
 }
 let queue = {}
