@@ -13,7 +13,7 @@ log() {
 THIS_DIR=$(dirname "$0")
 cd $THIS_DIR
 
-log "Refer startup log - $THIS_DIR/start.log for any startup issues."
+log "Refer log - $THIS_DIR/start.log for any startup issues."
 
 {
     log "Starting..."

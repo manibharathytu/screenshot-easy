@@ -1,0 +1,51 @@
+puppet file is incomplete
+
+the app locking for single instance can be achieved be shell script
+
+how killing the process does not kill the shell
+
+setup alias for screenshot
+
+why logs are not printed in start.log and instead in terminal while calling puppet
+
+https://stackoverflow.com/questions/3075682/how-to-set-the-process-name-of-a-shell-script
+
+https://unix.stackexchange.com/questions/131514/run-a-process-to-particular-dedicated-pid-only
+
+alias is only locally set. set it in the file
+
+how to make shell script a program
+
+how killing the program not killing shell . "Exiting.." is printing. Its supposed to print only when node exits
+
+chain of puppets, scripts, aliases, startup scripts, shortcuts.
+single instance on the start script level. may be with pid n lock file or with the process name of myAppNAme
+
+the log shows Exiting... when tried to start an already running app. thats misleading.
+
+https://unix.stackexchange.com/questions/3886/difference-between-nohup-disown-and - its really cool
+
+
+https://askubuntu.com/questions/611968/differences-between-command-disown-and-nohup-command-disown
+
+shortcut key for starting startup script
+
+
+
+-----
+pidof
+
+exec vs sh 
+
+shellexec, psexec
+
+program vs script vs process vs shell
+sh vs bash
+
+programming lang vs scripting lang
+
+pstree
+
+exec shell_scrpt.sh not working. why (https://stackoverflow.com/questions/29510220/exec-command-in-bash-doesnt-work-when-calling-a-shell-script/29510261)
+
+you can even put in profile https://askubuntu.com/questions/1414/how-to-create-a-permanent-alias
