@@ -16,8 +16,8 @@ cd $THIS_DIR
 log "Refer log - $THIS_DIR/start.log for any startup issues."
 
 {
-    log "Starting..."
+    log "App Started"
     node main.js   #if not spawned the startup script will be stuck.  
-    log "Exiting..."
+    log "App Stopped"
     exit 0
 } &>>start.log

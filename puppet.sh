@@ -7,7 +7,7 @@ if [[ $action == "start" ]]
 then
     exec ./start.sh
     echo "start"
-elif [ $action == "stop" ]
+elif [[ $action == "stop" ]]
 then
     exec ./stop.sh
     echo "stop"
